@@ -16,15 +16,19 @@ function gorevSilTamamla(e) {
     }
     if (tiklanilanEleman.classList.contains('gorev-btn-sil')) {
         
-        if (confirm('Emin misiniz')) {
-            tiklanilanEleman.parentElement.classList.toggle('kaybol');
-            const silinecekGorev = tiklanilanEleman.parentElement.children[0].innerText;
-            
-            localStorageSil(silinecekGorev);
-    
-            tiklanilanEleman.parentElement.addEventListener('transitionend', function () {
-                tiklanilanEleman.parentElement.remove();
-            });
+        if (confirm("Are you sure?")) {
+          tiklanilanEleman.parentElement.classList.toggle("kaybol");
+          const silinecekGorev =
+            tiklanilanEleman.parentElement.children[0].innerText;
+
+          localStorageSil(silinecekGorev);
+
+          tiklanilanEleman.parentElement.addEventListener(
+            "transitionend",
+            function () {
+              tiklanilanEleman.parentElement.remove();
+            }
+          );
         }
         
        
@@ -42,7 +46,7 @@ function gorevEkle(e) {
         localStorageKaydet(yeniGorev.value);
         yeniGorev.value = '';
     } else {
-        alert('Boş görev tanımı olmaz');
+        alert("There are no empty job descriptions.");
     }
     
 }
@@ -91,7 +95,7 @@ function gorevItemOlustur(gorev) {
      gorevTamamBtn.innerHTML = '<i class="far fa-check-square"></i>';
      gorevDiv.appendChild(gorevTamamBtn);
  
-     //tamamlandı butonu ekle
+     //Sil butonu ekle
      const gorevSilBtn = document.createElement('button');
      gorevSilBtn.classList.add('gorev-btn');
      gorevSilBtn.classList.add('gorev-btn-sil');
