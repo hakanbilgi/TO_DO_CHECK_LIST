@@ -8,26 +8,58 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css">
+      referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Lobster&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1 class="bg-dark text-light text-center">Bootstrap CDN</h1>
 
+  <body>
+    <header class="header">
+      <h1 class="main-title">Not Sepeti</h1>
+    </header>
+    <form action="^#">
+      <input type="text" class="input-gorev" placeholder="Notu Giriniz" />
+      <button type="submit">
+        <i class="fa-regular fa-square-plus"></i>
+      </button>
+    </form>
+    <div class="gorev-container">
+      <ul class="gorev-listesi">
+        <div class="gorev-item gorev-tamamlandi">
+          <li class="gorev-tanim">Markete git.</li>
+          <button class="gorev-btn gorev-tamamlandi">
+            <i class="fa-regular fa-square-check"></i>
+          </button>
+          <button class="gorev-btn gorev-sil">
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+        </div>
+        <div class="gorev-item">
+          <li class="gorev-tanim">Markete git.</li>
+          <button class="gorev-btn gorev-btn-tamamlandi">
+            <i class="fa-regular fa-square-check"></i>
+          </button>
+          <button class="gorev-btn gorev-btn-sil">
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+        </div>
+      </ul>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
   </body>
 </html>
