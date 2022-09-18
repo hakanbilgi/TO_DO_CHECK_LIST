@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Not Sepeti</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO CHECK LIST</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Lobster&family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
     <header class="header">
-      <h1 class="main-title">Not Sepeti</h1>
+        <h1 class="main-title">
+            TO DO CHECK LIST
+        </h1>
     </header>
-    <form class="gorev-form" action="^#">
-      <input
-        type="text"
-        class="form-item input-gorev"
-        placeholder="Notu Giriniz" />
-      <button class="form-item btn-gorev-ekle" type="submit">
-        <i class="fa-regular fa-square-plus"></i>
-      </button>
+
+    <form class="gorev-form" action="#">
+        <input type="text" class="form-item input-gorev" placeholder="
+Please enter what to do...">
+        <button class="form-item btn-gorev-ekle" type="submit">
+            <i class="far fa-plus-square"></i>
+        </button>
     </form>
+
     <div class="gorev-container">
-      <ul class="gorev-listesi"></ul>
+        <ul class="gorev-listesi">
+            
+        </ul>
     </div>
 
     <script src="javascript.js"></script>
-  </body>
+</body>
 </html>
