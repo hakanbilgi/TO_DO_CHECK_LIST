@@ -1,1 +1,1 @@
-console.log("buradayım");
+const yeniGorev = document.querySelector("input-gorev");

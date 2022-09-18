@@ -79,9 +79,7 @@ body {
 .gorev-btn-sil {
   background-color: rgb(228, 54, 54);
 }
-.gorev-tamamlandi{
-    text-decoration: line-through;
-    opacity: 0.5;
-    
-
+.gorev-tamamlandi {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
