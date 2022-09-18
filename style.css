@@ -1,9 +1,17 @@
+:root{
+    --main-color:rgba(41, 128, 185,1.0);
+    --main-color-light:rgba(41, 128, 185,0.5);
+    --accent-color:rgba(243, 156, 18,1.0);
+    --accent-color-light:rgba(243, 156, 18,0.5);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
